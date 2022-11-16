@@ -1,0 +1,784 @@
+@font-face {
+  font-family: "Manrrope";
+  src: url(fonts/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+/* body{
+  font-family: "Manrope", sans-serif;
+  font-family: "Inter", sans-serif;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+	position: relative;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #FFF;
+	padding: 1rem 1.5rem;
+}
+
+nav h1 {
+	padding: 0.5rem 1rem;
+  /* padding-left: 2rem; */
+  font-size: small;
+	/* padding-right: calc(2rem - 10px); */
+	/* border-radius: 8px; */
+}
+
+
+
+.menu {
+	display: none;
+	align-items: center;
+	margin: 0 -1rem;
+}
+
+.menu a {
+	margin: 0 1rem;
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+
+
+.hamburger {
+	appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: block;
+	width: 2rem;
+	height: 2rem;
+}
+
+.hamburger span {
+	color: #FFF;
+	font-size: 2rem;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 98;
+
+	padding-top: 6rem;
+	opacity: 0;
+	transform: translateY(-100%);
+	background-color: #000;
+	color: #FFF;
+	transition: 0.3s;
+}
+
+.mobile-menu.is-open {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.mobile-menu a {
+	display: block;
+	padding: 1rem;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.25rem;
+	transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+	background-color: #FFF;
+}
+
+.Bbtn{
+  padding: .8rem;
+  border-radius: 5px;
+  background-color: #FCEDED;
+  color: #19807D;
+  border: none;
+  outline: none;
+}
+
+
+ #firstsection{
+  font-family: "Manrope", sans-serif;
+  background-image: url(images/Background.png);
+   width: 100%;  
+  overflow: hidden;
+}  
+.phead {
+font-size: 30px;
+font-weight: 700;
+/* letter-spacing: -0.01em; */
+text-align: center;
+color:  #F4B63E;
+margin-top: 3rem;
+margin-bottom: 1rem;
+margin-left: -2rem;
+font-family: "Manrope", sans-serif;
+}
+.phead:before{
+  content: '';
+  animation: animate infinite 4s;
+}
+@keyframes animate{
+ 
+  0%{
+    content: 'Send Money';
+  }
+  100%{
+    content: 'Receive Money  ';
+  }
+}
+#span1{
+  color: #FCEDCF;
+}
+.ptext{
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+color: white;
+margin-bottom: 2rem;
+margin-left: 3rem;
+width: 70%;
+font-family: "Inter";
+}
+ .images{
+  /* margin-left: 5rem; */
+  margin-bottom: 5rem;
+}
+.images img{
+  margin-left: 5rem; 
+  width: 55%;
+  padding: .5rem;
+  justify-content: center;
+  }
+    /* section2 */
+.section2{
+  margin-top: 2rem;
+  margin-right: 2rem;
+} 
+.fobs{
+  display: flex;
+  flex-direction: column;
+}
+.fobs-p p{
+color: black;
+font-size: 1.4rem;
+font-weight: 700;
+width: 90%;
+ /* line-height: 43px;  */
+ text-align: left;  
+margin-left: 2rem;  
+font-family: "Manrope", sans-serif; 
+}
+.span2{
+color: #19807D;
+}
+.fobs-p2 p{
+  font-size: 1rem;
+  text-align: left; 
+  color: #808080 ;
+  width: 90%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-family: "Inter";
+}
+.hero-btn{
+  margin: 1rem;
+  padding: .8rem;
+  border: none;
+  border-radius: 10px;
+}
+
+    /* section3 */
+ #off1{
+font-family: "Manrope", sans-serif;
+font-size: 15px;
+font-weight: 200;
+line-height: 25px;
+letter-spacing: 0.2em;
+text-align: center;
+margin-top: 2rem;
+}
+#off2{
+font-family: "Manrrope";
+font-size: 25px;
+font-weight: 200; 
+margin-left: 2rem;
+margin-top: 1rem;
+text-align: center;
+
+}
+.flexible-payment{
+  background: #19807D;
+  border-radius: 10px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.flex1{
+  margin-left: .8rem;
+  margin-right: .8rem;
+  margin-top: 3rem;
+}
+.flex1 img{
+  margin-left: .8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 40%;
+}
+ #flex-text1{
+font-size: 25px;
+font-weight: 600;
+text-align: center;
+color: #FFFFFF;
+font-family: "Manrope", sans-serif;
+} 
+
+#flex-text2{
+font-size: 20px;
+font-weight: 300;
+text-align: center;
+color:#F5F5F5;
+margin-top: 1.5rem;
+} 
+.flex2 img{
+  width: 95%;
+} 
+
+
+
+ .notification-bill{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.not h2,
+.billl h2{
+  font-family: "Manrope", sans-serif;
+}
+.not p,
+.billl p{
+  font-family: "Inter";
+}
+.not img{
+  width: 80%;
+  margin-left: 3rem;
+}
+.bill img{
+  width: 75%;
+   margin-left: 3rem;
+}
+.notification, .bill{
+background: #FEF8EC;
+border-radius: 20px;
+margin-left: 2rem;
+margin-right: 2rem;
+margin-top: 2rem;
+}
+.not, .billl{
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius:20px  20px 0 0px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.not p, .bill p{
+margin-top: 1rem;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+color: #333333;
+
+} 
+
+ .bill{
+  background: #EEFCFB;
+ }
+   
+
+  /* section4 */
+.section4 h4{
+  font-family: "Manrope", sans-serif;
+text-align: center;
+margin-top: 2rem;
+}
+.bus{
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  text-align: center; 
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+.business{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  background: #FCEDED;
+ border-radius: 20px; 
+
+}
+.flex11 img{
+  width: 100%;
+  margin-top: 1.2rem;
+}
+ .API{
+  font-family: "Manrope", sans-serif;
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: 1000;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+#api{
+font-family: "Manrope", sans-serif;
+font-size: 13px;
+margin-left: 2rem;
+margin-right: 2rem;
+text-align: center;
+margin-top: 1rem;
+color: #666666;
+font-weight: 400;
+text-align: center;
+
+}
+.business button{
+  background: black;
+  color: white;
+  padding: .8rem;
+  width: 8rem;
+  border-radius: 10px;
+  margin: 1rem 3rem 2rem 3rem;
+  text-align: center;
+}
+
+.send{
+   background-color: #F5F5F5;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+}
+.flexx{
+  display: flex;
+  flex-direction: column;
+  margin: .7rem;
+}
+.flex1{
+  margin-top: 2rem;
+}
+#pp{
+font-family: "Manrope", sans-serif;
+font-size: 20px;
+font-weight: 800;
+text-align: center;
+}
+#pq{
+font-family: "Manrope", sans-serif;
+font-size: 13px;
+font-weight: 400;
+text-align: center;
+/* margin: 2rem; */
+/* margin-right: 2rem; */
+}
+.flex21 img{
+  margin-top: 1rem;
+}
+.flex22 img{
+ /* margin: 1rem; */
+ margin: .6rem;
+ width: 40%;
+}  
+   
+/* footer */
+ #footer{
+  margin-top: 3rem;
+ background: #F5F5F5;
+}
+.footerr{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+ 
+} 
+.row1{
+  margin: 3rem;
+}
+.row1 a{
+  /* margin: 1rem; */
+  font-size: 2rem;
+  padding: .6rem; 
+}
+.row2,
+.row3,
+.row4{
+ margin-top: 1rem;
+ /* padding: 2rem;  */
+ margin-left: 4rem;
+ justify-content: space-between;
+}
+.row2 h3, p,
+.row3 h3, p,
+.row4 h3, p{
+  padding-bottom: 1rem;
+}
+.row2 h3,
+.row3 h3,
+.row4 h3{
+  font-family: "Manrope", sans-serif;
+}
+
+.row2 p,
+.row3 p,
+.row4 p{
+  font-family: "Inter", sans-serif;
+}
+
+/* Mobile devices media query */
+@media (max-width:600px) {
+  #firstsection{
+    background-image: url(images/mobile\ background.png);
+     width: 100%; 
+    background-size: cover;
+  } 
+  }
+
+  /* website media query  */
+@media(min-width:601px) { 
+  .phead{
+font-size: 55px;
+font-weight: 700;
+letter-spacing: -0.01em;
+text-align: left;
+color:  #F4B63E;
+margin-top: 3rem;
+margin-left: 5rem;
+margin-right: 5rem;
+margin-bottom: 1rem;
+font-family: "Manrope", sans-serif;
+}
+.ptext{
+font-size: 24px;
+font-weight: 400;
+text-align: left;
+color: white;
+margin-bottom: 2rem;
+margin-left: 5rem;
+}
+.fobs-uncle{
+  display: flex;
+  flex-direction: row;
+  background-color: #FEF8EC;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.part2 img{
+  margin-top: 5rem;
+   /* width: 99.5%;  */
+  margin-bottom: -300px;
+}
+.part1, .part3{
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+.part3{
+  margin-right: 5rem;
+}
+.part1{
+  margin-left: 5rem;
+}
+.fobs-uncle #h1{
+  color: #19807D;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  font-family: "Manrope", sans-serif; 
+}
+.fobs-uncle p{
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  padding-top: .5rem;
+  color: #4D4D4D;
+ /* line-height: 1rem; */
+}
+.section3{
+  margin-top: 15rem;
+}
+
+}
+
+@media (min-width:601px)  and (min-width:980px) {
+.images img{
+  width: 15%;
+  margin-left: 5rem;
+}
+.fobs{
+  display: flex;
+  flex-direction: row;
+}
+.fobs-p p{
+font-size: 2rem;
+font-weight: 800;
+width: 100%; 
+text-align: right;  
+margin-left: 5rem;   
+}
+.span1{
+color: #19807D;
+}
+.fobs-p2 p{
+  font-size: 1.2rem;
+  text-align: left; 
+  color: #808080 ;
+  width: 70%;
+  margin-left: 7rem;
+  /* margin-top: 5rem; */
+}
+#off1{
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-top: 2rem;
+  }
+  #off2{
+  font-family: "Manrope", sans-serif;
+  font-size: 55px;
+  font-weight: 200; 
+  /* line-height: 72px; */
+  margin-left: 2rem;
+  margin-top: 1rem;
+  /* letter-spacing: -0.01em; */
+  text-align: center;
+  
+  }
+  .flexible-payment{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .flex1{
+    margin-left: .8rem;
+    margin-right: .8rem;
+    margin-top: 3rem;
+    width: 50%;
+  }
+  .flex1 img{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 40%;
+  }
+   #flex-text1{
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 43px; 
+  letter-spacing: -0.01em; 
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 5rem;
+  } 
+  
+  #flex-text2{
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  } 
+  .flex2 img{
+    width: 100%;
+  } 
+
+  .notification-bill{
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 5rem;
+  }
+  .not img{
+    width: 70%;
+    margin-left: 3rem;
+  }
+  .bill img{
+    width: 75%;
+     margin-left: 3rem;
+  }
+  .not, .billl{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .not p, .bill p{
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  
+  } 
+  
+
+  .section4 h4{
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+    }
+    .bus{
+      font-family: "Manrope", sans-serif;
+      font-size: 56px;
+      text-align: center;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      margin-top: 3rem;
+    }
+    .business{
+     display: flex;
+    flex-direction: row;
+     margin: 5rem;
+    height: 400px;
+    left: 104px;
+    top: 3923px;
+    border-radius: 20px; 
+     }
+    .flex11 img{
+      width: 140%;
+      margin-top: 6rem;
+    }
+    .API{
+      font-family: "Manrope", sans-serif;
+      text-align: left;
+      margin-top: 4rem;
+      font-size: 30px;
+      font-weight: 800;
+      margin-left: 10rem;
+      margin-right: 3rem;
+    }
+    #api{
+      font-family: "Manrope", sans-serif;
+      font-size: 18px;
+       margin-left: 10rem;
+       margin-right: 3rem;
+       text-align: left;
+       margin-top: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    
+    }
+    .business button{
+      padding: .8rem;
+      width:  12rem;
+      border-radius: 10px;
+      margin-left: 10rem;
+      /* margin-right: 10rem; */
+      margin-top: 1rem;
+      text-align: center;
+    }
+    
+    .send{
+      margin-left: 5rem;
+      margin-right: 5rem;
+      border-radius: 20px;
+    }
+    .flexx{
+      display: flex;
+      flex-direction: row;
+    }
+    /* .flex21{
+      margin-top: 2rem;
+    } */
+    #pp{
+      font-family: "Manrope", sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    /* line-height: 76px;
+    letter-spacing: -0.061em; */
+    text-align: left;
+    }
+    #pq{
+    font-size: 20px;
+    font-weight: 400;
+     /* line-height: 37px; */
+    text-align: left;
+    }
+    .flex21 img{
+      margin-top: 2rem;
+    }
+    .flex22 img{
+     /* margin: 1rem; */
+     width: 20%;
+    }
+    #footer{
+      margin-top: 3rem;
+      width: 100%; 
+     background-color: #F5F5F5;
+    }
+
+    .footerr{
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+     
+    } 
+    .row1{
+      margin: 5rem;
+    }
+    .row1 a{
+      font-size: 1rem;
+      padding: .6rem;  
+    }
+    .row2,
+    .row3,
+    .row4{
+     margin-top: 2rem;
+     /* padding: 2rem;  */
+     margin-left: 5rem;
+     justify-content: space-between;
+    }
+    .row2 h3, p,
+    .row3 h3, p,
+    .row4 h3, p{
+      padding-bottom: 1rem;
+      font-size: .9rem;
+    }
+    .footerr{
+      margin-right: 5rem;
+    }
+        
+}
+
+/* Media queries for menu */
+@media (min-width: 768px) {
+	.mobile-menu, .hamburger {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+	}
+}
